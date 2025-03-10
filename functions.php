@@ -42,6 +42,47 @@ add_action(
     'mib_enqueue_styles'
 );
 
+// Want to try adding our colours to the block editor, believe this is how this is done
+//add_theme_support('editor-color-palette') is called during the Ixion setup so this should hopefully tie in after that
+
+function mib_add_colours()
+{
+
+    $existing = get_theme_support('editor-color-palette');
+
+    $new = array_merge($existing[0], array(
+        array(
+            'name'  => esc_html__( 'MIB_White', 'ixion' ),
+            'slug'  => 'mib-white',
+            'color' => '#fafafa',
+        ),
+        array(
+            'name'  => esc_html__( 'MIB_Black', 'ixion' ),
+            'slug' => 'mib-black',
+            'color' => '#000000',
+        ),
+        array(
+            'name'  => esc_html__( 'MIB Cream', 'ixion' ),
+            'slug' => 'mib-cream',
+            'color' => '#F2F2ED',
+        ),
+        array(
+            'name'  => esc_html__( 'MIB Slate', 'ixion' ),
+            'slug' => 'mib-slate',
+            'color' => '#212121',
+        ),
+        array(
+            'name'  => esc_html__( 'MIB Maroon', 'ixion' ),
+            'slug' => 'mib-maroon',
+            'color' => '#57181F',
+        ),
+    ));
+
+    add_theme_support('editor-color-palette',  $new);
+}
+add_action('after_setup_theme', 'mib_add_colours', 20);
+
+
 /**
  * Lower Yoast SEO Metabox location
  */
