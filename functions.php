@@ -82,6 +82,15 @@ function mib_add_colours()
 }
 add_action('after_setup_theme', 'mib_add_colours', 20);
 
+// Adding extra menu as Ixion only comes with support for one
+
+function register_footer_menu() {
+    register_nav_menus(array(
+        'secondary-menu' => 'Footer Menu',
+    ));
+}
+
+add_action('after_setup_theme', 'register_footer_menu', 25);
 
 /**
  * Lower Yoast SEO Metabox location
