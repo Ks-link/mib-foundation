@@ -33,6 +33,33 @@
 /* Footer
 --------------------------------------------- */
 
+#colophon {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--slate);
+}
+
+.footer-img {
+  margin: 0 auto;
+  padding-top: 3rem;
+  
+    img.custom-logo {
+      filter: invert();
+    }
+}
+
+.footer-links {
+  padding: 2rem;
+}
+
+#menu-footer {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 
 
