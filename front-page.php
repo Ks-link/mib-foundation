@@ -40,11 +40,13 @@
 
  			endwhile;
 
-			get_template_part( 'components/features/recent-posts/recent-posts' );
+			//getting rid of these for now, will just comment them out and if they decide they want a blog we can add them back in. 
 
- 		else :
+		// 	get_template_part( 'components/features/recent-posts/recent-posts' );
 
- 			get_template_part( 'components/post/content', 'none' );
+ 		// else :
+
+ 		// 	get_template_part( 'components/post/content', 'none' );
 
  		endif; ?>
 
