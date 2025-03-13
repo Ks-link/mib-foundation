@@ -12,90 +12,94 @@
     Update URI:   false
 */
 
-
 /* Variables
 --------------------------------------------- */
 :root {
     --white: #fafafa;
     --black: #000000;
-    --cream: #F2F2ED;
+    --cream: #f2f2ed;
     --slate: #212121;
-    --maroon: #57181F;
+    --maroon: #57181f;
+}
 
-  }
+/* Typography
+--------------------------------------------- */
+body {
+    font-family: "Barlow", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Merriweather", serif;
+    font-weight: bold;
+    clear: both;
+    margin: 0.8em 0;
+}
 
 /* Header
 --------------------------------------------- */
 .site-branding {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
     .site-title {
-      font-size: clamp(1rem, 0.59vi + 1.13rem, 1.67rem);
-      width: clamp(50%, 50vw, 40%);
+        font-size: clamp(1rem, 0.59vi + 1.13rem, 1.67rem);
+        width: clamp(50%, 50vw, 40%);
     }
 }
-
-
 
 /* Footer
 --------------------------------------------- */
 
 #colophon {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--slate);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--slate);
 }
 
 .footer-img {
-  margin: 0 auto;
-  padding-top: 3rem;
-  
+    margin: 0 auto;
+    padding-top: 3rem;
+
     img.custom-logo {
-      filter: invert();
+        filter: invert();
     }
 }
 
 .footer-links {
-  padding: 2rem 0;
+    padding: 2rem 0;
 }
 
 .footer-navigation ul > li > a {
-	color: var(--white);
-	font-family: "Archivo Narrow", sans-serif;
-	text-transform: uppercase;
+    color: var(--white);
+    font-family: "Archivo Narrow", sans-serif;
+    text-transform: uppercase;
 }
-
 
 #menu-footer {
-  display: flex;
-  justify-content: center;
-  gap: 4rem;
-  list-style: none;
-  margin: 0;
-  padding-right: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    list-style: none;
+    margin: 0;
+    padding-right: 1.5rem;
 }
-
-
 
 /* Homepage
 --------------------------------------------- */
 /* hero section */
 
-
 /* about section */
-
 
 /* contact section */
 
-
-
 /* Services Page
 --------------------------------------------- */
-
-
-
 
 /* About Page
 --------------------------------------------- */
