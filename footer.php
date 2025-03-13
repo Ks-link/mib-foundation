@@ -12,6 +12,7 @@
 
 ?>
 
+</div><!-- #page -->
 <footer id="colophon" class="site-footer">
 	<div class="footer-img">
 		<?php the_custom_logo(); ?>
@@ -24,7 +25,6 @@
 		</nav>
 	</div><!-- .footer-links -->
 </footer><!-- #colophon -->
-</div><!-- #page -->
 
 <?php wp_footer(); ?>
 

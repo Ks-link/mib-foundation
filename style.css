@@ -50,12 +50,20 @@
 }
 
 .footer-links {
-  padding: 2rem;
+  padding: 2rem 0;
 }
+
+.footer-navigation ul > li > a {
+	color: var(--white);
+	font-family: "Archivo Narrow", sans-serif;
+	text-transform: uppercase;
+}
+
 
 #menu-footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 4rem;
   list-style: none;
   margin: 0;
   padding: 0;
