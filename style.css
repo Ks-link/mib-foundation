@@ -1,6 +1,6 @@
 /*
     Theme Name:   MIB Foundation Theme
-    Theme URI:    https://wordpress.org/themes/ixion/
+    Theme URI:    
     Author:       Kaleb Link/ Matt Garvey/ Gabbie Bade
     Author URI:   https://kaleblink.com
     Description:  child to the Ixion theme
@@ -16,6 +16,12 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Stupid ixion main-content right hand margin remove */
+
+.site-main {
+  margin: 0;
 }
 
 /* Variables
@@ -54,7 +60,7 @@ h6 {
 
     .site-title {
         font-size: clamp(1rem, 0.59vi + 1.13rem, 1.67rem);
-        width: clamp(50%, 50vw, 40%);
+        width: clamp(30%, 50vw, 60%);
     }
 }
 
@@ -100,18 +106,41 @@ h6 {
 --------------------------------------------- */
 /* hero section */
 
+
+
+
+/* Musical Advantage */
+
+#musical-advantage {
+  width: 100%;
+  background-color: var(--cream);
+
+    h3, p {
+      color: var(--maroon);
+    }
+}
+
+
 /* about section */
 
 
+/* List of Board Members/Advisors */
+
 #advisor-list {
+  margin: 0 auto;
   display: flex;
   width: 50%;
   flex-wrap: wrap;
-  justify-content: space-around;
   align-items: center;
   margin: 0;
   list-style-type: disc;
+
+    li#list-item {
+      width: 10rem;
+    }
 }
+
+
 
 
 
@@ -122,3 +151,9 @@ h6 {
 
 /* About Page
 --------------------------------------------- */
+
+
+
+
+
+
