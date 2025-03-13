@@ -31,8 +31,8 @@
   flex-direction: column;
 
     .site-title {
-      font-size: 2rem;
-      width: 40%;
+      font-size: clamp(1rem, 0.59vi + 1.13rem, 1.67rem);
+      width: clamp(50%, 50vw, 40%);
     }
 }
 
