@@ -26,7 +26,15 @@
 
 /* Header
 --------------------------------------------- */
+.site-branding {
+  display: flex;
+  flex-direction: column;
 
+    .site-title {
+      font-size: 2rem;
+      width: 40%;
+    }
+}
 
 
 
