@@ -63,6 +63,14 @@ h6 {
         width: clamp(30%, 50vw, 60%);
     }
 }
+header li a {
+  color: var(--slate) !important;
+}
+
+header li a:hover {
+  color: var(--maroon) !important;
+}
+
 
 /* Footer
 --------------------------------------------- */
@@ -105,8 +113,25 @@ h6 {
 /* Homepage
 --------------------------------------------- */
 /* hero section */
+.hero-button {
+  width: 30%;
+  min-width: 16rem;
+}
 
+.cta-column img { 
+  filter: blur(5px);
+  border: 2px solid #ddd;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
 
+.cta-text {
+  font-weight: 600;
+}
+
+.cta-link-text {
+  font-family: 'Merriweather';
+  font-weight: 800;
+}
 
 
 /* Musical Advantage */
