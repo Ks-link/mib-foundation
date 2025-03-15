@@ -149,7 +149,12 @@ header li a:hover {
 .adv-section {
   padding: 2rem;
   margin-bottom: 0;
-  max-width: 40rem;
+  justify-content: center;
+}
+
+.adv-col-left,
+.adv-col-right {
+  max-width: 34rem;
 }
 
 #adv-large-text {
