@@ -57,12 +57,12 @@ h6 {
 .site-branding {
     display: flex;
     flex-direction: column;
-
-    .site-title {
-        font-size: clamp(1rem, 0.59vi + 1.13rem, 1.67rem);
-        width: clamp(30%, 50vw, 60%);
-    }
 }
+.site-branding .site-title {
+    font-size: clamp(1rem, 0.59vi + 1.13rem, 1.67rem);
+    width: clamp(30%, 50vw, 60%);
+}
+
 header li a {
   color: var(--slate) !important;
 }
@@ -139,14 +139,24 @@ header li a:hover {
 #musical-advantage {
   width: 100%;
   background-color: var(--cream);
+}
 
-    h3 {
-      color: var(--maroon);
-    }
+#musical-advantage h3 {
+  color: var(--maroon);
+  margin-bottom: 0;
+}
+
+.adv-section {
+  padding: 2rem;
+  margin-bottom: 0;
+  max-width: 40rem;
 }
 
 #adv-large-text {
   color: var(--maroon);
+  font-family: 'Merriweather';
+  font-size: 1rem;
+  margin-bottom: 2.2875rem;
 }
 
 /* about section */
