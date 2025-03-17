@@ -101,7 +101,7 @@ header li a:hover {
     text-transform: uppercase;
 }
 
-#menu-footer {
+#menu-footer-menu {
     display: flex;
     justify-content: center;
     gap: 4rem;
