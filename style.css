@@ -180,8 +180,24 @@ header li a:hover {
   margin-bottom: 2.2875rem;
 }
 
-/* about section */
+/* About MIB section */
 
+
+/* to get lines to seperate pictures */
+@media screen and (min-width: 1024px) {
+    #singh-col{
+    border-left: 1px solid var(--slate);
+    border-right: 1px solid var(--slate);
+  }
+	
+}
+
+/* separator HRs */
+
+#about-separator {
+	max-width: clamp(20rem, 50vw, 37.5rem);
+	background-color: var(--slate);
+}
 
 /* List of Board Members/Advisors */
 
@@ -197,23 +213,29 @@ header li a:hover {
   }
 }
 
-
 #advisor-list {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 60%;
-  padding: 0;
   list-style-type: none;
-  gap: .15rem;
-
-    /* li#list-item {
-      width: 8rem;
-    } */
+ 
 }
 
-/* contact section */
+@media screen and (min-width: 600px) {
+  #advisor-list {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 60%;
+    padding: 0;
+    gap: .15rem;
+ }
+}
+
+#about-separator-bottom {
+	background-color: var(--maroon);
+}
+
+
+/* Mailing List section */
 
 #mailing-list {
   background-color: var(--maroon);
@@ -223,7 +245,6 @@ header li a:hover {
 #mail-columns {
   padding: 0 2rem;
 }
-
 
 @media screen and (min-width: var(--tablet)) {
 
@@ -236,6 +257,24 @@ header li a:hover {
   }
   
 }
+
+/* Contact Us section */
+
+#contact-us > div > h2 {
+	color: var(--maroon);
+}
+
+#contact-us > div > hr {
+	color: var(--maroon);
+}
+
+
+/* email/address */
+
+#email-row {
+	margin-bottom: 2rem;
+}
+
 
 
 /* Services Page
