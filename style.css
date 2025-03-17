@@ -195,9 +195,14 @@ header li a:hover {
 }
 
 
-/* to get lines to seperate pictures */
+/* matching mockup + to get lines to seperate pictures */
+
 @media screen and (min-width: 1024px) {
-    #singh-col{
+  #founder-columns {
+    gap: 0;
+  }
+  
+  #singh-col {
     border-left: 1px solid var(--slate);
     border-right: 1px solid var(--slate);
   }
@@ -207,7 +212,7 @@ header li a:hover {
 /* separator HRs */
 
 #about-separator {
-	max-width: clamp(20rem, 50vw, 37.5rem);
+	max-width: 86%;
 	background-color: var(--slate);
 }
 
