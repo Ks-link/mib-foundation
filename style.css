@@ -197,17 +197,17 @@ header li a:hover {
     } */
 }
 
-
-
-
-
 /* contact section */
 
 #mailing-list {
   background-color: var(--maroon);
   color: var(--white);
+  width: 100%;
 }
 
+#mail-columns {
+  padding: 0 2rem;
+}
 
 
 
