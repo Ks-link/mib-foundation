@@ -27,11 +27,18 @@ html {
 /* Variables
 --------------------------------------------- */
 :root {
+
+  /* colours */
     --white: #fafafa;
     --black: #000000;
     --cream: #f2f2ed;
     --slate: #212121;
     --maroon: #57181f;
+
+  /* breakpoints */
+    --tablet: 48em;
+    --desktop: 64em;
+
 }
 
 /* Typography
@@ -202,7 +209,6 @@ header li a:hover {
 #mailing-list {
   background-color: var(--maroon);
   color: var(--white);
-  width: 100%;
 }
 
 #mail-columns {
@@ -210,6 +216,19 @@ header li a:hover {
 }
 
 
+@media screen and (min-width: var(--tablet)) {
+
+  #mail-left-col {
+    padding: 0 2rem;
+  }
+  
+  #mail-right-col {
+    padding: 0 2rem;
+  }
+  
+
+
+}
 
 
 /* Services Page
