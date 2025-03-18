@@ -38,8 +38,11 @@ html {
   /* breakpoints */
     --tablet: 37.5em;
     --desktop: 64em;
-
+    
+    /* heading */
+    --h2: clamp(2.44rem, 2.15vi + 2.01rem, 3.95rem);
 }
+
 
 /* Typography
 --------------------------------------------- */
@@ -57,6 +60,10 @@ h6 {
     font-weight: bold;
     clear: both;
     margin: 0.8em 0;
+}
+
+h2 {
+  font-size: var(--h2);
 }
 
 /* Header
@@ -118,7 +125,7 @@ header li a:hover {
 
 /* media query */
 
-@media screen and (min-width: var(--tablet)) {
+@media screen and (min-width: 37.5em) {
   #menu-footer-menu {
     padding-right: 1.5rem;
     gap: 4rem;
@@ -149,6 +156,10 @@ header li a:hover {
   font-weight: 800;
 }
 
+/* text shadow so if text moves into the bright orange its still readable */
+#banner-text {
+	text-shadow: 2px 2px 3px black;
+}
 
 /* Musical Advantage */
 
@@ -263,7 +274,7 @@ header li a:hover {
   padding: 0 2rem;
 }
 
-@media screen and (min-width: var(--tablet)) {
+@media screen and (min-width: 37.5em) {
 
   #mail-left-col {
     padding: 0 2rem;
