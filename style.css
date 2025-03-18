@@ -85,6 +85,66 @@ header li a:hover {
   color: var(--maroon) !important;
 }
 
+header#masthead {
+	position: fixed;
+	width: 100%;
+	background: var(--white);
+	top: 0;
+	margin: 0;
+	border-bottom: none;
+	z-index:1000
+}
+
+.branding-container {
+	max-width: 1800px;
+}
+
+.main-navigation ul:before {
+	color: var(--maroon);
+}
+
+.main-navigation.toggled ul {
+	border-top: 3px solid var(--maroon);
+}
+
+.main-navigation .menu-toggle {
+	background: var(--maroon);
+	border-radius: 50px;
+}
+
+/* so the nav items have effects when in desktop but not in mobile */
+@media screen and (min-width: 37.5em) {
+      
+      li#menu-item-93 a{
+        background: var(--maroon);
+        color: var(--white) !important;
+        border:2px solid var(--maroon)n;
+        border-radius: 50px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        transition: 0.2s ease-in;
+      }
+
+      li#menu-item-93 a:hover{
+        background: white;
+        color: var(--black) !important;
+        border:2px solid var(--maroon);
+        border-radius: 50px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      li#menu-item-126 a{
+        border:2px solid var(--maroon);
+        border-radius: 50px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+      }
+}
+
+
+
 
 /* Footer
 --------------------------------------------- */
