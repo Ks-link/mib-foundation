@@ -149,6 +149,10 @@ header li a:hover {
   font-weight: 800;
 }
 
+/* text shadow so if text moves into the bright orange its still readable */
+#banner-text {
+	text-shadow: 2px 2px 3px black;
+}
 
 /* Musical Advantage */
 
