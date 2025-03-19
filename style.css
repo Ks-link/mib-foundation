@@ -74,8 +74,8 @@ h2 {
     flex-direction: column;
 }
 .site-branding .site-title {
-    font-size: clamp(1rem, 0.59vi + 1.13rem, 1.67rem);
-    width: clamp(30%, 50vw, 60%);
+  font-size: clamp(1rem, 0.36vi + 0.93rem, 1.25rem);
+  width: clamp(30%, 40vw, 60%);
 }
 
 header li a {
@@ -116,32 +116,42 @@ header#masthead {
 /* so the nav items have effects when in desktop but not in mobile */
 @media screen and (min-width: 37.5em) {
       
-      li#menu-item-93 a{
-        background: var(--maroon);
-        color: var(--white) !important;
-        border:2px solid var(--maroon)n;
-        border-radius: 50px;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        transition: 0.2s ease-in;
-      }
+  li#menu-item-93 a{
+    background: var(--maroon);
+    color: var(--white) !important;
+    border:2px solid var(--maroon);
+    border-radius: 50px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    transition: 0.2s ease-in;
+  }
 
-      li#menu-item-93 a:hover{
-        background: white;
-        color: var(--black) !important;
-        border:2px solid var(--maroon);
-        border-radius: 50px;
-        padding-left: 1rem;
-        padding-right: 1rem;
-      }
+  li#menu-item-93 a:hover{
+    background: white;
+    color: var(--black) !important;
+    border-radius: 50px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 
-      li#menu-item-126 a{
-        border:2px solid var(--maroon);
-        border-radius: 50px;
-        padding-left: 1rem;
-        padding-right: 1rem;
+  li#menu-item-126 a{
+    border:2px solid var(--maroon);
+    border-radius: 50px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    transition: 0.2s ease-in;
+}
+      li#menu-item-126 a:hover{
+    border:2px solid var(--maroon);
+    background: var(--maroon);
+    color: var(--white) !important;
+    border-radius: 50px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    transition: 0.2s ease-in;
 
-      }
+  }
+
 }
 
 
