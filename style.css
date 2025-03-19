@@ -327,7 +327,7 @@ header#masthead {
 }
 
 .branding-container {
-    max-width: 1800px;
+    max-width: 1900px;
 }
 
 .main-navigation ul:before {
@@ -609,13 +609,13 @@ header#masthead {
 --------------------------------------------- */
 
 section.align-mib {
-    max-width: 1800px;
+    max-width: 1900px;
     padding: 0 2rem;
 }
 
 @media screen and (min-width: 64em) {
     section.align-mib {
-        padding: 0 6rem;
+        padding: 0 4rem;
     }
 }
 
