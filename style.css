@@ -382,6 +382,18 @@ header#masthead {
     }
 }
 
+@media screen and (min-width: 50em) {
+
+  .branding-container {
+    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+}
+
+
+
 /* Footer
 --------------------------------------------- */
 
@@ -540,11 +552,6 @@ header#masthead {
         border-left: 1px solid var(--slate);
         border-right: 1px solid var(--slate);
     }
-
-    .branding-container {
-      padding-left: 0;
-      padding-right: 0;
-  }
 
 }
 
