@@ -330,6 +330,7 @@ header#masthead {
     max-width: 1900px;
 }
 
+
 .main-navigation ul:before {
     color: var(--maroon);
 }
@@ -539,12 +540,18 @@ header#masthead {
         border-left: 1px solid var(--slate);
         border-right: 1px solid var(--slate);
     }
+
+    .branding-container {
+      padding-left: 0;
+      padding-right: 0;
+  }
+
 }
 
 /* separator HRs */
 
 #about-separator {
-    max-width: 70%;
+    max-width: 60%;
     background-color: var(--slate);
 }
 
