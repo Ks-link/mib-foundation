@@ -456,7 +456,7 @@ header#masthead {
 .wp-block-cover-image
     .wp-block-cover__gradient-background.has-background-dim.has-background-dim-10,
 .wp-block-cover__inner-container.is-layout-constrained.wp-container-core-cover-is-layout-1.wp-block-cover-is-layout-constrained {
-    max-width: 87.5rem !important;
+    max-width: 112.5rem !important;
     margin: 0 auto !important;
 }
 
@@ -470,7 +470,11 @@ header#masthead {
 }
 
 .cta-column-parent {
-    max-width: 26.25rem;
+    max-width: 34.375rem;
+}
+
+.cta-column {
+  max-height: 15.625rem;
 }
 
 .cta-column img {
@@ -493,6 +497,44 @@ header#masthead {
     text-shadow: 2px 2px 3px black;
 }
 
+/* media queries fixing weird cta heights and margins */
+@media (max-width: 57.25rem) {
+  .cta-link-text {
+    margin: 0;
+  }
+  .cta-text-1 {
+    margin-bottom: 5rem;
+  }
+  .cta-text-2 {
+    margin-bottom: 2.5rem;
+  }
+  .cta-text-3 {
+    margin-bottom: 0.3rem;
+  }
+}
+
+@media (max-width: 48.8125rem) {
+  .cta-link-text {
+    margin-bottom: 1.8em;
+  }
+  .cta-text-1 {
+    margin-bottom: 2.5rem;
+  }
+  .cta-text-2 {
+    margin-bottom: 2.5rem;
+  }
+  .cta-text-3 {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 20.5rem) {
+  .cta-link-text {
+    margin: 0;
+  }
+}
+
+
 /* Musical Advantage */
 
 #musical-advantage {
@@ -513,7 +555,7 @@ header#masthead {
 
 .adv-col-left,
 .adv-col-right {
-    max-width: 43rem;
+    max-width: 52.5rem;
 }
 
 #adv-large-text {
