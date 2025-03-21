@@ -65,8 +65,13 @@ h2 {
     font-size: var(--h2);
 }
 
-a, #site-navigation a {
+a {
     font-family: "Barlow", sans-serif !important;
+    color: var(--maroon);
+}
+
+#site-navigation a {
+    color: var(--black);
 }
 
 /* Header
@@ -368,10 +373,15 @@ header#masthead {
     margin: 0;
     border-bottom: none;
     z-index: 1000;
+    transition: top 0.3s;
 }
 
 .branding-container {
     max-width: 1800px;
+}
+
+.branding-container #site-navigation .menu-toggle {
+    top: 3.5rem;
 }
 
 
@@ -379,17 +389,48 @@ header#masthead {
     color: var(--maroon);
 }
 
+.main-navigation ul {
+    display: block;
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    height: 0;
+    transition: all 0.3s;
+}
+
+
 .main-navigation.toggled ul {
     border-top: 3px solid var(--maroon);
+    visibility: visible;
+    margin: 1.6em 0 0;
+    padding: 1.6em;
+    opacity: 1;
+    height: auto;
 }
+
 
 .main-navigation .menu-toggle {
     background: var(--maroon);
     border-radius: 50px;
 }
 
+.front-page-wrapper {
+    margin-bottom: 0;
+}
+
 /* so the nav items have effects when in desktop but not in mobile */
 @media screen and (min-width: 37.5em) {
+
+    .main-navigation ul {
+        display: flex;
+        height: auto;
+        visibility: visible;
+        opacity: 1;
+        margin: 1.6em 0 0;
+        padding: 1.6em;
+    }
+
     li#menu-item-93 a {
         background: var(--maroon);
         color: var(--white) !important;
@@ -513,6 +554,10 @@ header#masthead {
     max-width: 34.375rem;
 }
 
+.cta-content {
+    height: 100%;
+}
+
 .cta-column {
     max-height: 15.625rem;
 }
@@ -527,8 +572,9 @@ header#masthead {
     font-weight: 600;
 }
 
-.cta-link-text {
-    font-family: "Merriweather";
+.cta-link-text,
+.cta-link-text a {
+    font-family: "Merriweather", serif !important;
     font-weight: 800;
 }
 
