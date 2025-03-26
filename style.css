@@ -456,12 +456,28 @@ header#masthead {
 .wp-block-cover-image
     .wp-block-cover__gradient-background.has-background-dim.has-background-dim-10,
 .wp-block-cover__inner-container.is-layout-constrained.wp-container-core-cover-is-layout-1.wp-block-cover-is-layout-constrained {
-    max-width: 112.5rem !important;
+    max-width: 120rem !important;
     margin: 0 auto !important;
 }
 
-.hero-button {
+/* section#hero-banner > img{
+    object-fit: cover;
+    aspect-ratio: 16/9;
+} */
+
+
+.hero-button a {
   width: 16rem !important;
+  background: var(--white);
+  color: var(--maroon) !important;
+  border: 2px solid var(--white);
+  transition: 0.2s ease-in;
+}
+.hero-button a:hover {
+  width: 16rem !important;
+  background: var(--maroon) !important;; 
+  color: var(--white) !important;
+
 }
 
 .cta-columns {
@@ -494,6 +510,7 @@ header#masthead {
 /* text shadow so if text moves into the bright orange its still readable */
 #banner-text {
     text-shadow: 2px 2px 3px black;
+    max-width: 63rem;
 }
 
 /* media queries fixing weird cta heights and margins */
@@ -669,7 +686,7 @@ section.align-mib {
 
 @media screen and (min-width: 64em) {
     section.align-mib {
-        padding: 0 4rem;
+        padding: 0 6rem;
     }
 }
 
