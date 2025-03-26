@@ -460,8 +460,18 @@ header#masthead {
     margin: 0 auto !important;
 }
 
-.hero-button {
+.hero-button a {
   width: 16rem !important;
+  background: var(--white);
+  color: var(--maroon) !important;
+  border: 2px solid var(--white);
+  transition: 0.2s ease-in;
+}
+.hero-button a:hover {
+  width: 16rem !important;
+  background: var(--maroon) !important;; 
+  color: var(--white) !important;
+
 }
 
 .cta-columns {
