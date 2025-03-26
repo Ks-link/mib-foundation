@@ -460,6 +460,12 @@ header#masthead {
     margin: 0 auto !important;
 }
 
+/* section#hero-banner > img{
+    object-fit: cover;
+    aspect-ratio: 16/9;
+} */
+
+
 .hero-button a {
   width: 16rem !important;
   background: var(--white);
