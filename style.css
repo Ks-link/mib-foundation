@@ -737,7 +737,18 @@ header#masthead {
     list-style-type: none;
 }
 
+#advisor-list li:first-of-type::before{
+    display: inline;
+    content: '● ';
+}
+
+
 @media screen and (min-width: 37.5em) {
+    #advisor-list li:first-of-type::before{
+        display: none;
+        content: '';
+    }
+    
     #advisor-list {
         margin: 0 auto;
         display: flex;
