@@ -42,6 +42,12 @@ add_action(
     'mib_enqueue_styles'
 );
 
+// Adding custom login styles
+function custom_login_styles() {
+    wp_enqueue_style('custom-login', get_stylesheet_directory_uri() . '/custom-login.css');
+}
+add_action('login_enqueue_scripts', 'custom_login_styles');
+
 // Want to try adding our colours to the block editor, believe this is how this is done
 //add_theme_support('editor-color-palette') is called during the Ixion setup so this should hopefully tie in after that
 
