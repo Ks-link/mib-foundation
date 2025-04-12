@@ -25,7 +25,7 @@ html {
     margin: 0;
 }
 
-.is-layout-constrained, .branding-container {
+.wp-block-group__inner-container.is-layout-constrained, .branding-container {
     max-width: 120rem !important;
     margin: 0 auto;
 }
@@ -428,15 +428,20 @@ header#masthead {
 /* so the nav items have effects when in desktop but not in mobile */
 @media screen and (min-width: 37.5em) {
 
+    .branding-container, section > .wp-block-group__inner-container.is-layout-constrained{
+        
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
     .main-navigation ul {
-        display: flex;
+        display: none;
         height: auto;
         visibility: visible;
         opacity: 1;
         margin: 1.6em 0 0;
-        padding: 1.6em;
+        padding: 0;
     }
-
     li#menu-item-93 a {
         background: var(--maroon);
         color: var(--white) !important;
@@ -474,15 +479,14 @@ header#masthead {
     }
 }
 
-@media screen and (min-width: 50em) {
 
-    .branding-container, .is-layout-constrained {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+@media screen and (min-width: 64em) {
+    .main-navigation ul {
+        display: flex;
     }
 
+    
 }
-
 
 
 /* Footer
@@ -776,13 +780,13 @@ header#masthead {
 --------------------------------------------- */
 
 section.align-mib {
-    max-width: 1900px;
+    max-width: 120rem !important;
     padding: 0 2rem;
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 37.5em) {
     section.align-mib {
-        padding: 0 6rem;
+        padding: 0;
     }
 }
 
