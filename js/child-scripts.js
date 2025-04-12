@@ -8,7 +8,7 @@ let currentScrollPos = window.scrollY;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("masthead").style.top = "0";
   } else {
-    document.getElementById("masthead").style.top = "-160px";
+    document.getElementById("masthead").style.top = "-100%";
   }
   prevScrollpos = currentScrollPos;
 }
