@@ -683,13 +683,17 @@ header#masthead {
     margin-bottom: 0.5rem;
 }
 
+
 /* matching mockup + to get lines to seperate pictures */
 
 @media screen and (min-width: 64em) {
     #founder-columns {
-        max-width: 120rem;
+        width: 100%;
+        max-width: 80rem;
+        margin: 0 auto;
         margin-bottom: 1.5rem;
         gap: 0;
+        text-align: center;
     }
 
     #singh-col {
