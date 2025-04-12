@@ -82,6 +82,11 @@ a {
 /* Header
 --------------------------------------------- */
 
+/* behind the header is the site description that has this dark background it shows up bec of the JS, this to visually hide it */
+.site-description-wrapper, .header-overlay {
+    visibility: hidden;
+}
+
 /* annoying	ixion media-queries for mobile menu to get mobile menu to work
 ------------------------------------------------------------ */
 @media screen and (min-width: 37.5em) {
@@ -378,7 +383,7 @@ header#masthead {
     margin: 0;
     border-bottom: none;
     z-index: 1000;
-    transition: top 0.3s;
+    transition: top 0.5s;
 }
 
 .branding-container #site-navigation .menu-toggle {
