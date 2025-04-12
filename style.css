@@ -687,8 +687,7 @@ header#masthead {
 
 @media screen and (min-width: 64em) {
     #founder-columns {
-        max-width: 1200px;
-        margin: 0 auto;
+        max-width: 120rem;
         margin-bottom: 1.5rem;
         gap: 0;
     }
