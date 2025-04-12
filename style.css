@@ -25,6 +25,11 @@ html {
     margin: 0;
 }
 
+.is-layout-constrained, .branding-container {
+    max-width: 120rem !important;
+    margin: 0 auto;
+}
+
 /* Variables
 --------------------------------------------- */
 :root {
@@ -376,10 +381,6 @@ header#masthead {
     transition: top 0.3s;
 }
 
-.branding-container {
-    max-width: 1800px;
-}
-
 .branding-container #site-navigation .menu-toggle {
     top: 3.5rem;
 }
@@ -471,8 +472,8 @@ header#masthead {
 @media screen and (min-width: 50em) {
 
     .branding-container {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 0;
+        padding-right: 0;
     }
 
 }
@@ -541,12 +542,6 @@ header#masthead {
     max-width: 120rem !important;
     margin: 0 auto !important;
 }
-
-/* section#hero-banner > img{
-    object-fit: cover;
-    aspect-ratio: 16/9;
-} */
-
 
 .hero-button a {
   width: 16rem !important;
